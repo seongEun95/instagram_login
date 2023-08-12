@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+
+    <!-- 파비콘 -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon-insta.png">
+
+    <!-- 오픈그래프 프로토콜 -->
+    <meta property="og:title" content="instagram login homework" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="github" />
+    <meta property="og:image" content="./assets/" />
+
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="login_wrap">
+        <!-- 로고 -->
+        <div class="logo">
+            <h1><a href="./index.html"><img src="./assets/img/instagram_logo.png" alt="인스타그램 로고"></a></h1>
+        </div>
+
+        <!-- 로그인 인풋 영역 -->
+        <form class="login_area" action="#" method="POST">
+            <div class="input_area">
+                <label><input class="input_box" type="text" autofocus placeholder="전화번호, 사용자 이름 또는 이메일"></label>
+                <label><input class="input_box" type="password" placeholder="비밀번호"></label>
+            </div>
+            <div class="button">
+                <button type="submit">로그인</button>
+            </div>
+        </form>
+
+        <!-- 하단 다른 조건 선택 영역 -->
+        <div class="line">또는</div>
+
+        <div class="other_option">
+            <!-- 페이스북 로그인 -->
+            <div class="facebook_login">
+                <a href="#">Facebook으로 로그인</a>
+            </div>
+
+            <!-- 비밀번호 찾기 -->
+            <div class="find_password">
+                <a href="#">비밀번호를 잊으셨나요?</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

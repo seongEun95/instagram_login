@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_wrap {
+    border: 1px solid #ccc;
+    padding: 40px 30px 20px;
+}
+
+/* 로고 */
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo h1 a img {
+    width: 250px;
+}
+
+/* 로그인 인풋 영역 */
+.login_area {}
+
+.input_area {}
+
+.input_area label {
+    display: block;
+}
+
+.input_area label:first-child{
+    margin-bottom: 5px;
+}
+
+.input_box {
+    width: 100%;
+    font-size: 16px;
+    color: #111;
+    padding : 10px;
+    background-color: #f9f9f9;
+    border : 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.input_box[type="text"] {
+    /* 스타일 정의 */
+}
+
+.input_box[type="password"] {
+    /* 스타일 정의 */
+}
+
+.button button {
+    display : inline-block;
+    width: 100%;
+    margin-top : 20px;
+    padding : 10px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    color : #fff;
+    background: rgb(97, 176, 255);
+    cursor: pointer;
+}
+.button button:hover {
+    opacity: 0.5;
+}
+
+/* 하단 다른 조건 선택 영역 */
+.line {
+    text-align: center;
+}
+.line::before{
+    content : '';
+}
+.line::after{
+    content : '';
+}
+
+.other_option {
+    /* 스타일 정의 */
+}
+
+/* 페이스북 로그인 */
+.facebook_login {
+    /* 스타일 정의 */
+}
+
+.facebook_login a {
+    /* 스타일 정의 */
+}
+
+/* 비밀번호 찾기 */
+.find_password {
+    /* 스타일 정의 */
+}
+
+.find_password a {
+    /* 스타일 정의 */
+}
