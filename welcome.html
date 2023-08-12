@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>welcome</title>
+    <style>
+      body{background: #999;}
+      .greet{text-align: center;padding-top: 40px;}
+      .greet img{width: 100px;}
+      h1{font-size: 20px; font-weight: 400; color:#fff;}
+    </style>
 </head>
 <body>
-    <h1>환영합니다.</h1>
+  <div class="greet">
+    <img src="./assets/img/favicon-insta.png" alt="인스타그램 로고">
+    <h1></h1>
+  </div>
+
+  <script>
+
+      // get 방식으로 받아온 데이터를 화면에 보여주기
+      const url = window.location.search;
+      const searchParams = new URLSearchParams(url);
+      const userId = searchParams.get('id')
+      const h1Elem = document.querySelector("h1");
+      h1Elem.innerText = `환영합니다. ${userId}님!\n인스타그램을 즐겨보세요!`
+
+  </script>
 </body>
 </html>
