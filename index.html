@@ -10,10 +10,13 @@
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon-insta.png">
 
     <!-- 오픈그래프 프로토콜 -->
-    <meta property="og:title" content="instagram login homework" />
+    <meta property="og:title" content="인스타 로그인창 구현" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="github" />
-    <meta property="og:image" content="./assets/" />
+    <meta property="og:image" content="./assets/img/open_graph_img.jpg" />
+
+    <!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- 스타일시트 -->
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -29,12 +32,13 @@
         </div>
 
         <!-- 로그인 인풋 영역 -->
-        <form class="login_area" action="#" method="POST">
+        <form class="login_area" action="./welcome.html" method="GET">
             <div class="input_area">
-                <label><input class="input_box" type="text" autofocus placeholder="전화번호, 사용자 이름 또는 이메일"></label>
-                <label><input class="input_box" type="password" placeholder="비밀번호"></label>
+                <label><input class="input_box id" name="id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일"></label>
+                <label><input class="input_box pw" name="password" type="password" placeholder="비밀번호" autocomplete="off"></label>
             </div>
-            <div class="button">
+            <!-- 로그인 버튼 -->
+            <div class="login_button">
                 <button type="submit">로그인</button>
             </div>
         </form>
